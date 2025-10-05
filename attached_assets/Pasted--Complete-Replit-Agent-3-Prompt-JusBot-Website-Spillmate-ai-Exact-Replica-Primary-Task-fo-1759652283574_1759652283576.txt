@@ -1,0 +1,284 @@
+# Complete Replit Agent 3 Prompt - JusBot Website (Spillmate.ai Exact Replica)
+
+## Primary Task for Replit Agent 3
+Create an EXACT pixel-perfect replica of the Spillmate.ai website, replacing all Spillmate content with JusBot legal assistant information. Use your web inspection capabilities to analyze the original site and replicate every design element precisely.
+
+## Step 1: Website Analysis Instructions for Agent 3
+**First, visit and analyze https://spillmate.ai/ thoroughly:**
+
+1. **Inspect the complete HTML structure** - document all div containers, classes, IDs, and semantic elements
+2. **Extract all CSS styling** - colors, fonts, spacing, gradients, animations, hover effects
+3. **Identify JavaScript functionality** - interactive elements, form handling, smooth scrolling
+4. **Document responsive design** - breakpoints, mobile layouts, touch interactions
+5. **Catalog all visual elements** - icons, images, buttons, cards, sections
+6. **Map out the exact layout** - header, hero, stats, features, pricing, footer sections
+
+## Step 2: Content Replacement Specifications
+
+### Brand Transformation
+Replace ALL instances of:
+- **"Spillmate"** → **"JusBot"**
+- **"mental health"** → **"legal guidance"**
+- **"emotional support"** → **"legal support"**
+- **"empathetic"** → **"intelligent" or "accurate"**
+- **"well-being"** → **"legal clarity"**
+- **"counseling"** → **"legal consultation"**
+- **"therapy"** → **"legal guidance"**
+
+### Exact Section Replacements
+
+#### Hero Section
+```html
+<!-- Replace with exact same styling but new content -->
+🚀 #1 LEGAL AI CHATBOT
+
+"Share Your Legal Concerns, JusBot Will Guide You"
+(Original: "Spill Your Thoughts, Spillmate Will Listen")
+
+"AI-powered legal guidance for your peace of mind"
+(Original: "AI-powered empathetic support for your mental well-being")
+
+[Get Started] - Keep identical button styling
+```
+
+#### Statistics Cards (4-card grid)
+```html
+<!-- Maintain exact same card design and layout -->
+Card 1: "1000+ Legal Queries"
+        "AI-driven legal guidance provided"
+
+Card 2: "24/7 Availability"
+        "Legal support anytime you need it"
+
+Card 3: "95% User Satisfaction"
+        "Positive feedback from our users"
+
+Card 4: "20+ Legal Topics"
+        "Wide range of legal areas covered"
+```
+
+#### Trust/Security Section  
+```html
+"Data Security with JusBot"
+
+"The most comprehensive legal AI support platform like never before. JusBot provides unparalleled legal guidance. It's better. No more complex legal processes or expensive consultations. Your legal privacy is safeguarded with private and anonymous interactions and industry-leading AI accuracy to keep your information secure."
+
+Three bullet points:
+• Anonymous and secure conversations
+• AI-driven accurate legal guidance
+• Available 24/7 for instant support
+```
+
+#### Partners Section
+```html
+"Our allies in justice"
+"Trusted by leading organizations committed to legal innovation"
+```
+
+#### Features Section (3 cards)
+```html
+"JusBot's legal support is unlike any other: It's better."
+
+"Your legal matters are safeguarded by anonymous interactions and industry-leading AI to keep you safe from legal missteps and privacy concerns. Discover total peace of mind and expert legal guidance."
+
+Feature Card 1: "Anonymous Interactions"
+"Ensures complete privacy and confidentiality for legal matters."
+
+Feature Card 2: "AI-Driven Legal Accuracy"
+"Uses advanced AI to provide understanding and accurate legal guidance."
+
+Feature Card 3: "24/7 Availability"
+"Always available for instant legal support whenever you need it."
+
+"Your chats will always be safe with JusBot, learn more."
+```
+
+#### Pricing Section (3 tiers)
+```html
+"Choose Your Path to Legal Clarity"
+"Select the plan that best fits your needs and start your journey to better legal understanding today."
+
+Tier 1: "Legal Start" - Free
+• One AI-powered legal consultation per day
+• Access to core JusBot AI features
+• Daily legal insights
+[Get Started]
+
+Tier 2: "Justice Plus" - $9.99/month [Most Popular]
+• 10+ AI-powered legal consultations per day
+• Extended JusBot AI features
+• Legal case tracking
+• Progress monitoring
+[Get Started]
+
+Tier 3: "Legal Enterprise" - Custom
+• Customized consultation allowances
+• Dedicated support
+• Platform integration options
+• Anonymized team legal insights
+[Contact Us]
+```
+
+#### Help Section
+```html
+"Need help?"
+
+"Discover intelligent legal AI support, legal guidance tips, justice insights, and thousands of helpful interactions! JusBot offers seamless and secure connections for your legal support needs.
+
+We've integrated advanced AI to facilitate your simple and secure connection to legal guidance quickly and instantaneously."
+
+Three sections:
+1. Blog: "Stay up to date with the latest stories and commentary on legal matters."
+   [Visit our blogs]
+
+2. 24/7 Chat Support: "Get our friendly AI legal agents at your service."
+   [Chat now]
+
+3. FAQs: "View FAQs for detailed instructions on specific features."
+   [Learn more about us]
+```
+
+## Step 3: JusBot Specific Information to Include
+
+### About JusBot
+- **Name Origin**: "Jus" derives from the Latin word for "law"
+- **Mission**: Making legal information accessible to everyone while contributing to UN SDGs
+- **Personality**: Friendly, approachable, laid-back legal information companion
+- **Purpose**: Simplify legal information and help users navigate complex legal matters
+
+### Development Team (Good Samaritan School, Jasola, New Delhi, India)
+- **Usman Habib**: Group Leader & Lead Developer
+- **Maaz Ahmad**: Tester
+- **Danyal Ahmad**: UI/UX Designer
+- **Ibrahim**: Research Assistant
+
+### Key Features to Highlight
+- **Instant Legal Information**: Provides immediate answers to legal questions
+- **Plain English Communication**: Translates complex legal jargon into understandable language
+- **Resource Guidance**: Directs users to relevant legal resources and considerations
+- **Educational Focus**: Helps users understand their legal rights and proper actions
+- **Cost-Effective Solution**: Free legal personal advisor chatbot
+- **SDG Contribution**: Specifically contributes to UN Sustainable Development Goals
+
+### Important Disclaimers
+- Provides legal information, NOT legal advice
+- Cannot replace professional legal counsel
+- Users need human lawyers for actual legal advice
+
+## Step 4: Technical Implementation Requirements
+
+### Exact Visual Replication
+1. **Use identical color schemes** - extract exact hex codes from Spillmate.ai
+2. **Copy typography precisely** - same fonts, sizes, weights, line heights
+3. **Replicate spacing exactly** - margins, padding, section gaps
+4. **Match interactive elements** - hover effects, transitions, animations
+5. **Duplicate responsive behavior** - same breakpoints and mobile layouts
+
+### Code Structure
+```html
+<!-- Maintain the exact same HTML structure -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Copy all meta tags, title, CSS links -->
+    <title>JusBot - AI Legal Assistant | Free Legal Guidance 24/7</title>
+    <meta name="description" content="JusBot provides AI-powered legal guidance accessible to everyone. Get instant legal information, know your rights, and navigate legal matters with confidence.">
+</head>
+<body>
+    <!-- Header: Copy exact navigation structure -->
+    <header>
+        <!-- Logo: JusBot -->
+        <!-- Navigation menu: same styling -->
+        <!-- CTA button: Get Started -->
+    </header>
+
+    <!-- Main content: Copy exact section structure -->
+    <main>
+        <!-- Hero section -->
+        <!-- Stats section -->
+        <!-- Trust section -->
+        <!-- Partners section -->
+        <!-- Features section -->
+        <!-- Pricing section -->
+        <!-- Help section -->
+    </main>
+
+    <!-- Footer: Copy exact structure -->
+    <footer>
+        <!-- Same footer content with JusBot branding -->
+    </footer>
+</body>
+</html>
+```
+
+### CSS Requirements
+```css
+/* Copy exact styling from Spillmate.ai */
+/* Use their color palette, gradients, animations */
+/* Maintain identical responsive breakpoints */
+/* Keep same hover effects and transitions */
+```
+
+### JavaScript Functionality
+```javascript
+// Replicate any interactive elements
+// Smooth scrolling, form handling, animations
+// Modal popups, mobile menu functionality
+```
+
+## Step 5: Testing and Quality Assurance
+
+### Visual Comparison Checklist
+- [ ] Side-by-side comparison with Spillmate.ai shows identical layout
+- [ ] Colors match exactly (use color picker to verify)
+- [ ] Typography is pixel-perfect match
+- [ ] Spacing and proportions are identical
+- [ ] All animations and transitions work the same
+- [ ] Mobile responsive behavior matches original
+- [ ] All buttons and links function properly
+
+### Content Verification
+- [ ] All JusBot information is accurately integrated
+- [ ] Team members are properly credited
+- [ ] Legal disclaimers are included where appropriate
+- [ ] UN SDG mission is mentioned
+- [ ] Student innovation story is highlighted
+- [ ] No Spillmate references remain
+
+## Step 6: Deployment Instructions
+
+1. **Set up Replit project** with HTML/CSS/JS template
+2. **Use Replit's built-in preview** to test during development
+3. **Deploy using Replit's hosting** for immediate live site
+4. **Configure custom domain** if needed (JusBot.com or chosen company name)
+5. **Set up analytics** (Google Analytics integration)
+
+## Expected Deliverables
+
+### Primary Output
+A fully functional website that:
+- Looks identical to Spillmate.ai in every visual aspect
+- Contains all JusBot-specific content and branding
+- Functions perfectly on desktop and mobile
+- Loads quickly and performs well
+- Includes proper SEO optimization
+
+### Additional Features to Consider
+- **Live chat integration** with your existing JusBot chatbot
+- **Contact forms** for user inquiries
+- **Blog section** for legal insights and updates
+- **FAQ section** with common legal questions
+- **Privacy policy** and terms of service pages
+
+## Final Instructions for Agent 3
+
+1. **First, thoroughly analyze Spillmate.ai** using your web inspection capabilities
+2. **Document the exact technical specifications** you discover
+3. **Create the replica website** with all JusBot content replacements
+4. **Test extensively** to ensure pixel-perfect matching
+5. **Deploy the final version** on Replit's platform
+6. **Provide the live URL** and any additional deployment instructions
+
+This should result in a professional, trustworthy website that captures Spillmate's proven design effectiveness while perfectly representing JusBot's mission to make legal information accessible to everyone through innovative AI technology developed by passionate students from New Delhi.
+
+Remember: The goal is complete visual and functional replication with only content/branding changes - users should feel the same level of trust and professionalism they experience on Spillmate.ai, but for legal guidance instead of mental health support.
