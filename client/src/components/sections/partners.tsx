@@ -8,12 +8,12 @@ export default function Partners() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-muted">
+    <section className="py-20 px-4 bg-background">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-partners-title">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 fade-in-up gradient-text" data-testid="text-partners-title">
           Our allies in justice
         </h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto" data-testid="text-partners-description">
+        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto fade-in-up" style={{ animationDelay: '0.1s' }} data-testid="text-partners-description">
           Trusted by leading organizations committed to legal innovation
         </p>
         
@@ -21,7 +21,8 @@ export default function Partners() {
           {partners.map((partner, index) => (
             <div 
               key={index}
-              className="bg-white rounded-xl p-6 card-hover h-24 flex items-center justify-center"
+              className="bg-card border border-primary/20 rounded-xl p-6 card-hover h-24 flex items-center justify-center scale-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
               data-testid={`partner-${index}`}
             >
               <div className="text-muted-foreground font-semibold text-center">

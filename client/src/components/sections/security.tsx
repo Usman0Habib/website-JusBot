@@ -17,17 +17,17 @@ export default function Security() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-muted">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="slide-in-left">
             {/* Legal security illustration */}
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl flex items-center justify-center">
-                <Shield className="w-64 h-64 text-primary/20" />
+              <div className="w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl flex items-center justify-center glow-effect">
+                <Shield className="w-64 h-64 text-primary/40" />
               </div>
               {/* Floating badge */}
-              <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 float-animation">
+              <div className="absolute -top-6 -right-6 bg-card rounded-2xl shadow-xl border border-primary/20 p-4 float-animation pulse-glow">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                   <span className="font-semibold text-sm" data-testid="text-security-badge">
@@ -38,8 +38,8 @@ export default function Security() {
             </div>
           </div>
           
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-security-title">
+          <div className="slide-in-right">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text" data-testid="text-security-title">
               Data Security with JusBot
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed" data-testid="text-security-description">

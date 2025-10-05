@@ -35,16 +35,16 @@ export default function Help() {
   ];
 
   return (
-    <section id="help" className="py-20 px-4 bg-white">
+    <section id="help" className="py-20 px-4 bg-muted">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-help-title">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 fade-in-up gradient-text" data-testid="text-help-title">
             Need help?
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-help-description-1">
+          <p className="text-lg text-muted-foreground leading-relaxed fade-in-up" style={{ animationDelay: '0.1s' }} data-testid="text-help-description-1">
             Discover intelligent legal AI support, legal guidance tips, justice insights, and thousands of helpful interactions! JusBot offers seamless and secure connections for your legal support needs.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mt-4" data-testid="text-help-description-2">
+          <p className="text-lg text-muted-foreground leading-relaxed mt-4 fade-in-up" style={{ animationDelay: '0.2s' }} data-testid="text-help-description-2">
             We've integrated advanced AI to facilitate your simple and secure connection to legal guidance quickly and instantaneously.
           </p>
         </div>
@@ -53,7 +53,8 @@ export default function Help() {
           {helpSections.map((section, index) => (
             <div 
               key={index}
-              className={`bg-gradient-to-br ${section.bgClass} rounded-2xl p-8 text-center card-hover`}
+              className={`bg-card border border-primary/20 rounded-2xl p-8 text-center card-hover scale-in glow-effect`}
+              style={{ animationDelay: `${index * 0.15}s` }}
               data-testid={section.testId}
             >
               <div className={`w-20 h-20 rounded-2xl ${section.iconBgClass} flex items-center justify-center mx-auto mb-6`}>

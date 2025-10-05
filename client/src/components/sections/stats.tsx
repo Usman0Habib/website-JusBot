@@ -35,7 +35,8 @@ export default function Stats() {
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="stats-card rounded-2xl p-6 card-hover"
+              className="stats-card rounded-2xl p-6 card-hover scale-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
               data-testid={stat.testId}
             >
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">

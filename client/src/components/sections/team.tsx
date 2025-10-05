@@ -27,13 +27,13 @@ export default function Team() {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 bg-muted">
+    <section id="about" className="py-20 px-4 bg-background">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-team-title">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 fade-in-up gradient-text" data-testid="text-team-title">
             Meet the Team Behind JusBot
           </h2>
-          <p className="text-lg text-muted-foreground" data-testid="text-team-subtitle">
+          <p className="text-lg text-muted-foreground fade-in-up" style={{ animationDelay: '0.1s' }} data-testid="text-team-subtitle">
             Built with passion by students from Good Samaritan School, Jasola, New Delhi, India
           </p>
         </div>
@@ -42,7 +42,8 @@ export default function Team() {
           {teamMembers.map((member, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-6 text-center card-hover"
+              className="bg-card border border-primary/20 rounded-2xl p-6 text-center card-hover scale-in glow-effect"
+              style={{ animationDelay: `${index * 0.15}s` }}
               data-testid={`team-member-${index}`}
             >
               <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-secondary mx-auto mb-4 flex items-center justify-center">
@@ -64,8 +65,8 @@ export default function Team() {
         </div>
         
         <div className="mt-12 text-center">
-          <div className="bg-white rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4" data-testid="text-mission-title">
+          <div className="bg-card border border-primary/20 rounded-2xl p-8 max-w-4xl mx-auto fade-in-up glow-effect" style={{ animationDelay: '0.6s' }}>
+            <h3 className="text-2xl font-bold mb-4 gradient-text" data-testid="text-mission-title">
               Our Mission
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4" data-testid="text-mission-paragraph-1">

@@ -87,7 +87,7 @@ export default {
         "fade-in-up": {
           "0%": {
             opacity: "0",
-            transform: "translateY(20px)"
+            transform: "translateY(30px)"
           },
           "100%": {
             opacity: "1",
@@ -101,13 +101,67 @@ export default {
           "50%": {
             transform: "translateY(-20px)"
           },
+        },
+        "pulse-glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 20px rgba(147, 51, 234, 0.5), 0 0 40px rgba(147, 51, 234, 0.3)"
+          },
+          "50%": {
+            boxShadow: "0 0 30px rgba(147, 51, 234, 0.8), 0 0 60px rgba(147, 51, 234, 0.5)"
+          },
+        },
+        "gradient-shift": {
+          "0%": {
+            backgroundPosition: "0% 50%"
+          },
+          "50%": {
+            backgroundPosition: "100% 50%"
+          },
+          "100%": {
+            backgroundPosition: "0% 50%"
+          },
+        },
+        "slide-in-left": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-50px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)"
+          },
+        },
+        "slide-in-right": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(50px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)"
+          },
+        },
+        "scale-in": {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.8)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)"
+          },
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in-up": "fade-in-up 0.6s ease-out",
+        "fade-in-up": "fade-in-up 0.8s ease-out forwards",
         "float": "float 6s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "slide-in-left": "slide-in-left 0.8s ease-out forwards",
+        "slide-in-right": "slide-in-right 0.8s ease-out forwards",
+        "scale-in": "scale-in 0.6s ease-out forwards",
       },
     },
   },

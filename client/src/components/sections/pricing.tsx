@@ -14,7 +14,7 @@ export default function Pricing() {
       buttonText: "Get Started",
       buttonClass: "bg-primary/10 text-primary hover:bg-primary/20",
       isPopular: false,
-      cardClass: "bg-white",
+      cardClass: "bg-card",
       textClass: "text-foreground"
     },
     {
@@ -46,19 +46,19 @@ export default function Pricing() {
       buttonText: "Contact Us",
       buttonClass: "bg-primary/10 text-primary hover:bg-primary/20",
       isPopular: false,
-      cardClass: "bg-white",
+      cardClass: "bg-card",
       textClass: "text-foreground"
     }
   ];
 
   return (
-    <section id="pricing" className="py-20 px-4 bg-muted">
+    <section id="pricing" className="py-20 px-4 bg-background">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-pricing-title">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 fade-in-up gradient-text" data-testid="text-pricing-title">
             Choose Your Path to Legal Clarity
           </h2>
-          <p className="text-lg text-muted-foreground" data-testid="text-pricing-description">
+          <p className="text-lg text-muted-foreground fade-in-up" style={{ animationDelay: '0.1s' }} data-testid="text-pricing-description">
             Select the plan that best fits your needs and start your journey to better legal understanding today.
           </p>
         </div>
@@ -67,7 +67,8 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div 
               key={index}
-              className={`${plan.cardClass} rounded-2xl p-8 card-hover relative`}
+              className={`${plan.cardClass} ${plan.isPopular ? '' : 'border border-primary/20'} rounded-2xl p-8 card-hover relative scale-in ${plan.isPopular ? 'pulse-glow' : ''}`}
+              style={{ animationDelay: `${index * 0.15}s` }}
               data-testid={`pricing-plan-${index}`}
             >
               {plan.isPopular && (

@@ -2,9 +2,9 @@ import { AlertTriangle } from "lucide-react";
 
 export default function Disclaimer() {
   return (
-    <section className="py-16 px-4 bg-white border-t border-border">
+    <section className="py-16 px-4 bg-muted border-t border-border">
       <div className="container mx-auto max-w-4xl">
-        <div className="bg-amber-50 border-l-4 border-secondary rounded-lg p-6">
+        <div className="bg-card/50 border-l-4 border-secondary rounded-lg p-6 fade-in-up">
           <div className="flex items-start space-x-4">
             <AlertTriangle className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
             <div>

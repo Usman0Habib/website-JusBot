@@ -4,38 +4,38 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(210, 40%, 98%);
-  --foreground: hsl(222, 47%, 11%);
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(222, 47%, 11%);
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(222, 47%, 11%);
-  --primary: hsl(221, 83%, 53%);
+  --background: hsl(240, 10%, 8%);
+  --foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 12%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(240, 10%, 10%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --primary: hsl(270, 80%, 60%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(38, 92%, 50%);
-  --secondary-foreground: hsl(222, 47%, 11%);
-  --muted: hsl(210, 40%, 96%);
-  --muted-foreground: hsl(215, 16%, 47%);
-  --accent: hsl(221, 83%, 53%);
+  --secondary: hsl(290, 70%, 55%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(240, 10%, 15%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --accent: hsl(270, 80%, 60%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(356, 63%, 56%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(214, 32%, 91%);
-  --input: hsl(200, 23%, 97%);
-  --ring: hsl(221, 83%, 53%);
-  --chart-1: hsl(221, 83%, 53%);
-  --chart-2: hsl(159, 100%, 36%);
-  --chart-3: hsl(42, 93%, 56%);
-  --chart-4: hsl(147, 78%, 42%);
-  --chart-5: hsl(341, 75%, 51%);
-  --sidebar: hsl(0, 0%, 100%);
-  --sidebar-foreground: hsl(222, 47%, 11%);
-  --sidebar-primary: hsl(221, 83%, 53%);
+  --border: hsl(240, 10%, 20%);
+  --input: hsl(240, 10%, 15%);
+  --ring: hsl(270, 80%, 60%);
+  --chart-1: hsl(270, 80%, 60%);
+  --chart-2: hsl(290, 70%, 55%);
+  --chart-3: hsl(310, 65%, 50%);
+  --chart-4: hsl(250, 75%, 65%);
+  --chart-5: hsl(280, 70%, 58%);
+  --sidebar: hsl(240, 10%, 12%);
+  --sidebar-foreground: hsl(0, 0%, 98%);
+  --sidebar-primary: hsl(270, 80%, 60%);
   --sidebar-primary-foreground: hsl(0, 0%, 100%);
-  --sidebar-accent: hsl(210, 40%, 96%);
-  --sidebar-accent-foreground: hsl(221, 83%, 53%);
-  --sidebar-border: hsl(214, 32%, 91%);
-  --sidebar-ring: hsl(221, 83%, 53%);
+  --sidebar-accent: hsl(240, 10%, 15%);
+  --sidebar-accent-foreground: hsl(270, 80%, 60%);
+  --sidebar-border: hsl(240, 10%, 20%);
+  --sidebar-ring: hsl(270, 80%, 60%);
   --font-sans: 'Inter', sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -91,54 +91,104 @@
 
 @layer components {
   .gradient-bg {
-    background: linear-gradient(135deg, var(--primary) 0%, hsl(261, 80%, 48%) 100%);
+    background: linear-gradient(135deg, hsl(270, 80%, 25%) 0%, hsl(240, 60%, 15%) 50%, hsl(0, 0%, 5%) 100%);
+    position: relative;
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(135deg, hsl(270, 80%, 70%) 0%, hsl(290, 70%, 65%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .card-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .card-hover:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(147, 51, 234, 0.3), 0 0 60px rgba(147, 51, 234, 0.1);
   }
   
   .btn-primary {
-    background: linear-gradient(135deg, var(--primary) 0%, hsl(261, 80%, 48%) 100%);
+    background: linear-gradient(135deg, hsl(270, 80%, 60%) 0%, hsl(290, 70%, 55%) 100%);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.4);
   }
   
   .btn-primary:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 8px 25px rgba(147, 51, 234, 0.6);
   }
   
   .stats-card {
-    background: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(135deg, hsl(240, 15%, 12%) 0%, hsl(240, 12%, 15%) 100%);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid hsl(270, 50%, 30%);
+    box-shadow: 0 8px 32px rgba(147, 51, 234, 0.1);
   }
 
   .fade-in-up {
-    animation: fadeInUp 0.6s ease-out;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
   }
 
   .float-animation {
     animation: float 6s ease-in-out infinite;
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.5), 0 0 40px rgba(147, 51, 234, 0.3);
+  }
+
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(135deg, hsl(240, 15%, 12%) 0%, hsl(240, 12%, 15%) 100%);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, hsl(270, 80%, 60%), hsl(290, 70%, 55%));
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .animated-gradient {
+    background: linear-gradient(270deg, hsl(270, 80%, 25%), hsl(290, 70%, 30%), hsl(240, 60%, 20%));
+    background-size: 600% 600%;
+    animation: gradientShift 8s ease infinite;
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+    opacity: 0;
   }
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
@@ -152,6 +202,60 @@
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.5), 0 0 40px rgba(147, 51, 234, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.8), 0 0 60px rgba(147, 51, 234, 0.5);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
